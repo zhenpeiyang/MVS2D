@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="MVS2D: Efficient Multi-view Stereo via Attention-Driven 2D Convolutions"/>
+	    <title>MVS2D: Efficient Multi-view Stereo via Attention-Driven 2D Convolutions</title>
+	    <!-- Bootstrap -->
+	    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	    <style>
+	      body {
+		background: #fdfcf9 no-repeat fixed top left;
+		font-family:'Open Sans', sans-serif;
+	      }
+	    </style>
+
+	  </head>
+	
+	<section>
+	    <div class="jumbotron text-center mt-0">
+	      <div class="container">
+		<div class="row">
+		  <div class="col">
+		    <h2 style="font-size:30px;">MVS2D: Efficient Multi-view Stereo via Attention-Driven 2D Convolutions</h2>
+		    <hr>
+		    <h6> <a href="https://www.cs.utexas.edu/~yzp12/" target="_blank">Zhenpei Yang</a><sup>1</sup> &nbsp;&nbsp;
+            <a href="https://jrenzhile.com/" target="_blank">Zhile Ren</a><sup>2</sup>  &nbsp;&nbsp;
+			 <!-- <a href="https://ymingxie.github.io/" target="_blank">Yiming Xie</a><sup>1,2*</sup>,  -->
+			<a href="https://shanqi.github.io/" target="_blank">Qi Shan</a><sup>2</sup> &nbsp;&nbsp;
+			<a href="https://www.cs.utexas.edu/~huangqx/" target="_blank">Qixing Huang</a><sup>1</sup>
+		    <p> <sup>1</sup>The University of Texas at Austin &nbsp;&nbsp; 
+			<sup>2</sup>Apple
+			<br>
+		    </p>
+		    <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+			<a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+			<a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+		    <div class="row justify-content-center">
+		      <div class="column">
+			  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
+			    <i class="fa fa-file"></i> Paper</a> </p>
+		      </div>
+		      <div class="column">
+			  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="" role="button" 
+			    target="_blank" disabled=1>
+			<i class="fa fa-github-alt"></i> Code </a> </p>
+		      </div>
+		      <div class="column">
+			  <p class="mb-5"><a class="btn btn-large btn-light" href="supp.pdf" role="button"  target="_blank">
+			    <i class="fa fa-file"></i> Supplementary</a> </p>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </section>
+
+<!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+            <div><b style="color:#fd5638; font-size:large" id="demo-warning"></b>
+            <br>
+            </div>
+              <!-- <br><br> -->
+          <p class="text-justify">
+Deep learning has made significant impacts on multi-view stereo systems. State-of-the-art approaches typically involve building a cost volume, followed by multiple 3D convolution operations to recover the input image's pixel-wise depth. While such end-to-end learning of plane-sweeping stereo advances public benchmarks' accuracy, they are typically very slow to compute. 
+We present MVS2D, a highly efficient multi-view stereo algorithm that seamlessly integrates multi-view constraints into single-view networks via an attention mechanism. Since MVS2D only builds on 2D convolutions, it is at least 4x faster than all the notable counterparts. Moreover, our algorithm produces precise depth estimations, achieving state-of-the-art results on challenging benchmarks ScanNet, SUN3D, and RGBD. Even under inexact camera poses, our algorithm still out-performs all other algorithms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+<!-- video -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <hr style="margin-top:0px">
+            <video width="100%" playsinline="" preload="" controls>
+                <source src="videos/video.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+      <hr>
+      Thanks to <a href="https://jiamingsun.ml/" target="_blank">Jiaming Sun</a> for the <a href="https://zju3dv.github.io/neuralrecon/" target="_blank">website template</a>.
+  </footer>
+</html>
