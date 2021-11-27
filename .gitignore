@@ -1,0 +1,5 @@
+pretrained_model
+*.swp
+*/*.swp
+*/*/*.swp
+sync.sh
